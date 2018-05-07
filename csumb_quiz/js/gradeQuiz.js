@@ -13,9 +13,13 @@ $(document).ready(function(){
         //Get answers
         var answer1 = $("input[name='question1']").val().trim();
         var answer2 = $("input[name='question2']:checked").val();
+        var answer3 = $("input[name='question3']:checked").val();
+        var answer4 = $("input[name='question4']:checked").val();
         
         console.log(answer1);
         console.log(answer2);
+        console.log(answer3);
+        console.log(answer4);
         
         //Checks if answers are correct
         // Question 1
@@ -34,6 +38,24 @@ $(document).ready(function(){
             incorrectAnswer($("#question2-feedback"));
         }
         $("#question2-feedback").append("The answer is <strong>Monte Rey</strong>");
+        
+        
+        //question 3
+        if(answer3==="B"){
+            correctAnswer($("#question3-feedback"));
+        }else{
+            incorrectAnswer($("#question3-feedback"));
+        }
+        $("#question3-feedback").append("The answer is <strong>25</strong>");
+        
+        
+        //question 4
+        if(answer4==="A"){
+            correctAnswer($("#question4-feedback"));
+        }else{
+            incorrectAnswer($("#question4-feedback"));
+        }
+        $("#question4-feedback").append("The answer is <strong>7</strong>");
 
         //Displays quiz score
         $("#score").html(score);
