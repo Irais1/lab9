@@ -54,7 +54,7 @@ $(document).ready(function(){
                 //console.log(data);
                 $("#times").html(data.times);
                 $("#average").html(data.average);
-                $("#feedback").css("display","black");
+                $("#feedback").css("display","block");
                 $("#waiting").html("");
                 $("input[type='submit']").css("display","");
                 
