@@ -16,13 +16,13 @@ function getDBConnection() {
     
     
     //when connecting from Heroku
-    if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
-        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-        $host = $url["host"];
-        $dbName = substr($url["path"], 1);
-        $username = $url["user"];
-        $password = $url["pass"];
-    } 
+    // if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
+    //     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    //     $host = $url["host"];
+    //     $dbName = substr($url["path"], 1);
+    //     $username = $url["user"];
+    //     $password = $url["pass"];
+    // } 
     
     try {
         //Creates a database connection
