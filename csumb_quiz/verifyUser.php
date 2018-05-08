@@ -23,6 +23,5 @@ if(isset($user['username'])){
 } else {
     echo "The values you entered were incorrect.
     <a href='login.php' >Retry</a>";
-    
 }
 ?>
